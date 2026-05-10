@@ -147,15 +147,32 @@ worker.Run(worker.InterruptCh())
 
 ## 5. 开发建议
 
-### 5.1 你需要理解的部分
+### 5.1 短期理解目标
 
-作为前端工程师，你可能**不需要写 Temporal 代码**，但需要理解：
+作为正在向全栈发展的工程师，你需要**尽早掌握** Temporal 代码的编写：
 
-1. **请求是如何触发的** - 前端调 API，API 启动 Workflow
-2. **如何查询任务状态** - 通过 API 查询 Workflow 执行状态
-3. **SSE 如何配合** - Server-Sent Events 用于实时推送任务进度
+1. **请求触发机制** - 前端调 API，API 启动 Workflow
+2. **任务状态查询** - 通过 API 查询 Workflow 执行状态
+3. **SSE 配合** - Server-Sent Events 用于实时推送任务进度
 
-### 5.2 如果你要深入
+### 5.2 中期掌握目标
+
+在 1-3 个月内，你应该能够**独立编写** Workflow 和 Activity：
+
+- 能够定义新的 Activity 处理新的 AI 供应商对接
+- 能够编排新的 Workflow 来满足业务需求
+- 理解 Activity 的重试策略和超时控制
+- 知道如何调试 Workflow 执行状态
+
+### 5.3 长期建设目标
+
+成为团队中 **Temporal 领域的专家**：
+
+- 设计复杂的 Workflow 编排方案
+- 优化 Worker 性能和资源使用
+- 建立团队工作流最佳实践
+
+### 5.4 学习资源
 
 - 官方文档：https://docs.temporal.io/
 - Go SDK：https://docs.temporal.io/go
